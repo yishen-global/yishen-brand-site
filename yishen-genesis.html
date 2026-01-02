@@ -34,9 +34,6 @@
         .glass-panel { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); }
         .scan-line { position: absolute; width: 100%; height: 2px; background: var(--brand-blue); opacity: 0.3; animation: scan 4s linear infinite; }
         @keyframes scan { 0% { top: 0%; } 100% { top: 100%; } }
-
-        /* 代际时间线装饰 */
-        .timeline-marker { position: absolute; left: -2px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, transparent, var(--brand-blue), transparent); }
     </style>
 </head>
 <body class="genesis-hero selection:bg-[#0ea5e3]">
@@ -50,15 +47,19 @@
     <div id="cursor-glow"></div>
 
     <nav class="fixed w-full z-[100] border-b border-white/5 bg-[#010409]/85 backdrop-blur-xl h-20 flex items-center px-8 justify-between">
-        <a href="index.html" class="flex flex-col">
-            <span class="text-white font-black italic text-xl tracking-tighter uppercase leading-none">Yishen Global</span>
-            <span class="text-[#0ea5e3] font-mono text-[8px] tracking-[3px]">GENESIS_PROTOCOL_V5.0</span>
+        <a href="index.html" class="flex items-center gap-4">
+            <img src="public/assets/images/logo.webp" alt="Yishen Global" class="h-10 w-auto">
+            <div class="flex flex-col">
+                <span class="text-white font-black italic text-xl tracking-tighter uppercase leading-none">Yishen Global</span>
+                <span class="text-[#ffd700] font-mono text-[8px] tracking-[3px]">SOVEREIGN_GENESIS_V5.0</span>
+            </div>
         </a>
         <div class="hidden lg:flex gap-8 font-mono text-[10px] text-gray-400 uppercase tracking-widest">
-            <a href="genesis.html" class="text-white border-b border-[#0ea5e3] pb-1">01_GENESIS</a>
+            <a href="index.html" class="hover:text-white transition">00_INDEX</a>
+            <a href="yishen-genesis.html" class="text-white border-b border-[#ffd700] pb-1">01_GENESIS</a>
+            <a href="solutions.html" class="hover:text-white transition">02_SOLUTIONS</a>
             <a href="clusters.html" class="hover:text-white transition">03_CLUSTERS</a>
-            <a href="resources.html" class="hover:text-white transition">04_RESOURCES</a>
-            <a href="tactical-briefing.html" class="px-5 py-2 bg-[#0ea5e3] text-black font-black italic rounded-sm uppercase">Access_Vault</a>
+            <a href="contact.html" class="px-5 py-2 bg-[#ffd700] text-black font-black italic rounded-sm uppercase">Contact_Sovereign</a>
         </div>
     </nav>
 
@@ -75,10 +76,7 @@
             </div>
         </section>
 
-        
-
         <div class="grid lg:grid-cols-1 gap-12 relative mb-32">
-            
             <div class="story-card">
                 <div class="hanzi-watermark" style="left: -20px; top: 0;">彬</div>
                 <div class="flex flex-col md:flex-row gap-12 items-center relative">
@@ -89,7 +87,7 @@
                     </div>
                     <div class="md:w-2/3">
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            礼仪与坚韧的奠基者。确立了 Yishen 在传统制造领域的诚信主权，为后续向海洋与高科技基建领域扩张奠定了原始信用背书。确保每一份全球合同都受控于牢不可破的握手，开创了 38 年零违约记录。
+                            礼仪与坚韧的奠基者。确立了 Yishen 在传统制造领域的诚信主权，为后续向海洋与高科技基建领域扩张奠定了原始信用背书。开创了 38 年零违约记录。
                         </p>
                     </div>
                 </div>
@@ -105,7 +103,7 @@
                     </div>
                     <div class="md:w-2/3">
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            繁荣与物理火力的执行者。引入长虹制链（HS 7315）与高强度合金主权，将母舰的触角延伸至全球港口五金与起重系统。他定义了大规模制造的“物理级确定性”，将 G80/G100 级链条的主权插在了南美与欧洲的各大港口。
+                            物理火力的执行者。引入长虹制链（HS 7315）与高强度合金主权，定义了大规模制造的“物理级确定性”，将 G80/G100 级链条的主导权插在了南美与欧洲港口。
                         </p>
                     </div>
                 </div>
@@ -121,7 +119,7 @@
                     </div>
                     <div class="md:w-2/3">
                         <p class="text-gray-400 text-lg leading-relaxed">
-                            智慧与光芒的驱动者。通过 AI 算法将传统墨水转化为数字化透明度，集成 Trademo/ImportGenius 对撞算法。他通过数字化护照（Technical Passport）实现了针对北美避税主权与拉美市场的毫秒级同步，完成了母舰从物理实体向数字情报实体的跨越。
+                            智慧与光芒的驱动者。通过 AI 算法将传统制造转化为数字化透明度，通过数字化护照（Technical Passport）完成了母舰从物理实体向数字情报实体的跨越。
                         </p>
                     </div>
                 </div>
@@ -133,17 +131,12 @@
             <div class="max-w-2xl relative z-10">
                 <h4 class="text-[#ffd700] font-mono text-xs uppercase tracking-[5px] mb-6">// SOVEREIGN_CREDIT_VERIFICATION</h4>
                 <p class="text-gray-400 text-sm leading-relaxed italic">
-                    三代人的基因沉淀已转化为全球通用的信用货币。我们已完成邓白氏（D-U-N-S）编码 545277884 的全方位验证，作为美加墨 500 强企业的顶级合规供应商，我们代表了 B2B 贸易中的最终确定性。
+                    邓白氏（D-U-N-S）编码 545277884 验证通过。作为美加墨 500 强企业的顶级合规供应商，我们代表了 B2B 贸易中的最终确定性。
                 </p>
             </div>
             <div class="bg-black/50 p-8 border border-white/10 text-center rounded-xl min-w-[280px] relative z-10">
                 <span class="block text-gray-600 font-mono text-[9px] uppercase mb-2">D-U-N-S_Identifier</span>
                 <span class="text-3xl font-black text-white tracking-widest">545277884</span>
-                <div class="mt-4 flex justify-center gap-4 grayscale opacity-50">
-                    <i class="fa-brands fa-cc-visa text-xl"></i>
-                    <i class="fa-solid fa-shield-halved text-xl"></i>
-                    <i class="fa-solid fa-earth-americas text-xl"></i>
-                </div>
             </div>
         </section>
     </main>
@@ -153,17 +146,10 @@
             <div class="text-[10px] font-mono text-gray-700 uppercase tracking-[4px]">
                 © 2026 Yishen Global // Genesis_Sovereignty_Verified
             </div>
-            <div class="flex flex-wrap items-center gap-10 grayscale opacity-40 hover:grayscale-0 transition-all duration-1000">
-                <img src="assets/icons/bifma-badge.webp" class="h-6" alt="BIFMA">
-                <img src="assets/icons/en131-badge.webp" class="h-6" alt="EN131">
-                <img src="assets/icons/ista-badge.webp" class="h-6" alt="ISTA">
-                <img src="assets/icons/logo-ul.webp" class="h-6" alt="UL">
-            </div>
         </div>
     </footer>
 
     <script>
-        // [SCRIPTS_LOCKED]
         window.addEventListener('load', () => {
             document.getElementById('bar-fill').style.width = '100%';
             setTimeout(() => {
@@ -180,7 +166,6 @@
             });
         });
 
-        // 仪式感：Hanzi Watermark 动态视差
         document.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             document.querySelectorAll('.hanzi-watermark').forEach((el, i) => {
